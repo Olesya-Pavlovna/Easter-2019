@@ -264,7 +264,7 @@ button.more::after {
 }
 
 
-@media only screen and (min-width : 320px) and (max-width : 425px) {
+@media all and (min-width : 320px) and (max-width : 425px) {
     .container {
         margin: 0 auto;
     }
@@ -281,19 +281,17 @@ button.more::after {
     }
 
     .fon img {
-        margin: auto;
-        height: auto;
+        margin-bottom: 12%;
     }
 
     .fon,
-    .hed,
-    button {
+    .hed {
         margin: 0;
         padding: 5px;
     }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media all and (min-width : 768px) and (max-width : 1024px) {
     .modal__body {
         background-color: #fff;
         width: 500px;
@@ -302,5 +300,11 @@ button.more::after {
 
     button {
         margin: 3%;
+    }
+}
+
+@media all and (min-width : 320px) and (max-width : 1024px) {
+    button {
+        margin-top: 10%;
     }
 }
